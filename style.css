@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.logo{
+    width: 100px;
+}
+.header {
+    background-color: #e7e6aa;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.nav {
+    display: flex;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0071b8;
+}
+.content {
+    padding: 20px;
+}
+.content h2 {
+    margin-top: 0;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+.product {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.footer {
+    background-color: #0071b8;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.products {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.products a {
+    text-decoration: none;
+    color: #0071b8;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 120px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.products a img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.products a:hover {
+    background-color: #e7e6aa;
+    color: white;
+    transform: translateY(-2px);
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.view-all-button{
+    background-color: #e7e6aa;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c9c89a;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.view-all-button:hover {
+    background-color: #b6b595;
+    transform: translateY(-2px);
+}
+.search-bar button {
+    padding: 10px;
+    border: 1px solid #b8b500;
+    background-color: #c9c89d;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.search-bar button:hover {
+    background-color: #005f9b;
+} 
+.catalog-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c9c89a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.catalog-button:hover {
+    background-color: #b6b595;
+    transform: translateY(-2px);
+}
+.danda{
+    justify-content: center;
+    width: 100%;
+}
+
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.mirror-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.mirror-item:hover {
+    transform: scale(1.05);
+}
+
+.mirror-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.mirror-item h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.price {
+    font-size: 18px;
+    color: #e63946; 
+    margin: 10px 0;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 20px;
+    color: #685904; 
+    cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffbf00; 
+    flex-direction:row;
+}
