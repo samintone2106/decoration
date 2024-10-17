@@ -205,10 +205,12 @@ body {
     font-size: 20px;
     color: #685904; 
     cursor: pointer;
+    flex-direction: row-reverse
 }
 
 .rating label:hover,
 .rating label:hover ~ label {
     color: #ffbf00; 
     flex-direction:row;
+    flex-direction: row-reverse
 }
