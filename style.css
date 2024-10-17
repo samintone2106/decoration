@@ -198,6 +198,7 @@ body {
 
 .rating input {
     display: none;
+    flex-direction: row-reverse;
 }
 
 .rating label {
